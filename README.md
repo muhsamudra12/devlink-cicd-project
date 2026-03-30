@@ -51,4 +51,6 @@ Below are the successful execution logs and configurations as required by the fi
 ### Task 10: Running Application Logs
 **Filename:** `screenshots/oc-pipelines-app-logs.png`
 ![Application Logs Screenshot](screenshots/oc-pipelines-app-logs.png)
+
+# Update untuk Trigger Pipeline
 ```
