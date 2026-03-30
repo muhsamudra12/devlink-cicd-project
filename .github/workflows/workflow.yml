@@ -17,4 +17,4 @@ jobs:
 
       # TASK 3: Unit Testing Step
       - name: Run Unit Tests
-        run: npm test
+        run: node ./node_modules/jest/bin/jest.js
