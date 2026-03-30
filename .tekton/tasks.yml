@@ -1,0 +1,19 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: project-tasks
+spec:
+  steps:
+    # TASK 5: Jest Test Task
+    - name: run-jest-tests
+      image: node:16
+      script: |
+        npm install
+        npm test
+
+    # TASK 4: Cleanup Task
+    - name: cleanup-workspace
+      image: alpine
+      script: |
+        echo "Cleaning up temporary files..."
+        rm -rf ./temp_logs

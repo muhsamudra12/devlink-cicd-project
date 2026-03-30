@@ -1,0 +1,16 @@
+const request = require("supertest");
+const app = require("../src/app");
+
+describe("Task API Endpoints", () => {
+  it("should return welcome message", async () => {
+    const res = await request(app).get("/");
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty("message");
+  });
+
+  it("should fetch all tasks", async () => {
+    const res = await request(app).get("/api/tasks");
+    expect(res.statusCode).toEqual(200);
+    expect(res.body.length).toBeGreaterThan(0);
+  });
+});
