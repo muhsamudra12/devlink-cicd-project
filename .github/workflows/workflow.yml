@@ -13,7 +13,7 @@ jobs:
 
       # TASK 2: Code Linting Step
       - name: Run Code Linting
-        run: npx eslint src/**
+        run: node ./node_modules/eslint/bin/eslint.js src/**
 
       # TASK 3: Unit Testing Step
       - name: Run Unit Tests
