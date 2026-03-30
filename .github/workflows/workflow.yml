@@ -13,7 +13,7 @@ jobs:
 
       # TASK 2: Code Linting Step
       - name: Run Code Linting
-        run: npm run lint
+        run: npx eslint src/**
 
       # TASK 3: Unit Testing Step
       - name: Run Unit Tests
