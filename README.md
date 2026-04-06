@@ -18,6 +18,7 @@ A simple RESTful API for task management, built with **Node.js** and **Express**
 ├── src/                 # Application source code
 ├── tests/               # Unit testing files
 └── package.json         # Project dependencies and scripts
+```
 
 ## Setup & Installation
 Clone the repository:
